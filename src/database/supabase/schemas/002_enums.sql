@@ -1,0 +1,1 @@
+create type public.language_code as enum ('az', 'en', 'ru');

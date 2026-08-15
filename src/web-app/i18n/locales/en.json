@@ -1,0 +1,137 @@
+{
+  "site": {
+    "name": "Vetzet",
+    "tagline": "Veterinary Laboratory Information Portal"
+  },
+  "nav": {
+    "home": "Home",
+    "catalogue": "Service Catalogue",
+    "analyses": "Analyses",
+    "knowledge": "Knowledge Base",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "pages": {
+    "home": {
+      "title": "Vetzet — Veterinary Laboratory Services",
+      "description": "Vetzet provides comprehensive laboratory analysis information for veterinary clinics and animal owners: ELISA and PCR tests, sample requirements, turnaround times and prices."
+    },
+    "about": {
+      "title": "About Us — Vetzet",
+      "description": "Learn about Vetzet, the veterinary laboratory information portal, our mission, quality policy and how to reach our team."
+    },
+    "contact": {
+      "title": "Contact — Vetzet",
+      "description": "Get in touch with the Vetzet veterinary laboratory for questions about analyses, sample submission or cooperation."
+    },
+    "analyses": {
+      "title": "Analysis Catalogue — Vetzet",
+      "description": "Browse and filter the full Vetzet catalogue of veterinary laboratory analyses by species, category and method."
+    },
+    "analysis_detail": {
+      "title": "{name} — Vetzet",
+      "description": "Laboratory details for the {name} analysis: method, sample type, sample amount, storage conditions, turnaround time and price."
+    },
+    "analysis_catalogue": {
+      "title": "Service Catalogue — Vetzet",
+      "description": "Explore the Vetzet veterinary laboratory service catalogue organised by animal species."
+    }
+  },
+  "home": {
+    "hero_title": "Veterinary Laboratory Services",
+    "hero_subtitle": "Comprehensive laboratory analysis information for your animals",
+    "cta_analyses": "Browse Analyses",
+    "cta_catalogue": "Service Catalogue",
+    "stats_analyses": "Analyses",
+    "stats_species": "Species",
+    "stats_categories": "Analysis Categories",
+    "featured_species": "Analyses by Species",
+    "latest_articles": "Latest Articles",
+    "view_all": "View All",
+    "elisa": {
+      "title": "Why are ELISA tests important for animal health?",
+      "subtitle": "ELISA supports preventive medicine and evidence-based herd management.",
+      "points": {
+        "early_diagnosis": {
+          "label": "🧪 Early diagnosis",
+          "content": "Some infectious diseases can be detected through laboratory testing before clinical signs are fully developed. This allows timely action to prevent disease spread within the farm."
+        },
+        "herd_monitoring": {
+          "label": "🐄 Herd health monitoring",
+          "content": "ELISA results help evaluate the spread of diseases on the farm and monitor the overall immunological status of the herd."
+        },
+        "vaccination_assessment": {
+          "label": "💉 Evaluation of vaccination programs",
+          "content": "Monitoring antibody levels for specific diseases can be used to evaluate vaccination program effectiveness. The results provide veterinarians with additional data for better vaccination strategy planning."
+        },
+        "epidemiological_surveillance": {
+          "label": "🦠 Epidemiological surveillance of infections",
+          "content": "ELISA tests are an important diagnostic tool for investigating infectious disease spread on farms, assessing risks, and designing disease control programs."
+        },
+        "poultry_importance": {
+          "label": "🐔 Special importance in poultry",
+          "content": "In poultry farms, ELISA testing enables systematic monitoring of flock health status. Serological monitoring can be carried out for Newcastle disease, infectious bronchitis, Gumboro disease, and other major infections."
+        }
+      }
+    }
+  },
+  "analysis_catalogue": {
+    "title": "Service Catalogue",
+    "subtitle": "Explore our analysis portfolio by species",
+    "view_analyses": "View Analyses"
+  },
+  "analyses": {
+    "title": "Analysis Catalogue",
+    "subtitle": "Explore our laboratory analyses",
+    "filter_species": "Species",
+    "filter_category": "Category",
+    "search_placeholder": "Search analyses...",
+    "all_species": "All Species",
+    "all_categories": "All Categories",
+    "method": "Method",
+    "sample_type": "Sample Type",
+    "sample_amount": "Sample Amount",
+    "storage_conditions": "Storage Conditions",
+    "material": "Required Material",
+    "turnaround": "Turnaround Time",
+    "price": "Price",
+    "hours": "hours",
+    "no_results": "No analyses found.",
+    "detail_title": "Analysis Details",
+    "notes": "Notes"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Veterinary laboratory services",
+    "quality_policy": "Our Quality Policy",
+    "portal_mission": "Our goal is to make the laboratory knowledge required for accurate diagnosis and treatment quickly and reliably accessible.",
+    "quality_policy_text": "All our analyses are carried out within quality management systems, and results are delivered to clinics within the defined turnaround time.",
+    "location": "{appName} Laboratory, Azerbaijan",
+    "portal_intro": "{appName} is an information portal that provides comprehensive laboratory analysis information for veterinary clinics and pet owners."
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Full Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "success": "Your message has been sent successfully.",
+    "error": "An error occurred.",
+    "address": "Address",
+    "phone": "Phone"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "not_found": "Page not found",
+    "back": "Back",
+    "language": "Language",
+    "error_occurred": "An error occurred"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  }
+}

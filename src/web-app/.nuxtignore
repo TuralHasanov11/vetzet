@@ -1,0 +1,5 @@
+# ignore layout foo.vue
+<!-- app/layouts/admin.vue -->
+
+# ignore page inside ignore folder
+app/pages/admin/*.vue

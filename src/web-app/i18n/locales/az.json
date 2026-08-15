@@ -1,0 +1,137 @@
+{
+  "site": {
+    "name": "Vetzet",
+    "tagline": "Baytarlıq Laboratoriya Məlumat Portalı"
+  },
+  "nav": {
+    "home": "Ana Səhifə",
+    "catalogue": "Xidmət Kataloqu",
+    "analyses": "Analizlər",
+    "knowledge": "Bilik Bazası",
+    "about": "Haqqımızda",
+    "contact": "Əlaqə"
+  },
+  "pages": {
+    "home": {
+      "title": "Vetzet — Baytarlıq Laboratoriya Xidmətləri",
+      "description": "Vetzet baytarlıq klinikaları və heyvan sahibləri üçün hərtərəfli laborator analiz məlumatı təqdim edir: ELISA və PZR testləri, nümunə tələbləri, nəticə müddətləri və qiymətlər."
+    },
+    "about": {
+      "title": "Haqqımızda — Vetzet",
+      "description": "Baytarlıq laboratoriya məlumat portalı olan Vetzet, missiyamız, keyfiyyət siyasətimiz və bizimlə əlaqə yolları haqqında məlumat alın."
+    },
+    "contact": {
+      "title": "Əlaqə — Vetzet",
+      "description": "Analizlər, nümunə göndərilməsi və əməkdaşlıq ilə bağlı suallar üçün Vetzet baytarlıq laboratoriyası ilə əlaqə saxlayın."
+    },
+    "analyses": {
+      "title": "Analiz Kataloqu — Vetzet",
+      "description": "Vetzet baytarlıq laborator analizlərinin tam kataloqunu növ, kateqoriya və metoda görə nəzərdən keçirin və süzgəcdən keçirin."
+    },
+    "analysis_detail": {
+      "title": "{name} — Vetzet",
+      "description": "{name} analizi üzrə laborator məlumatlar: metod, nümunə növü, nümunə miqdarı, saxlanma şərtləri, nəticə müddəti və qiymət."
+    },
+    "analysis_catalogue": {
+      "title": "Xidmət Kataloqu — Vetzet",
+      "description": "Heyvan növlərinə görə təşkil edilmiş Vetzet baytarlıq laboratoriya xidmət kataloqunu kəşf edin."
+    }
+  },
+  "home": {
+    "hero_title": "Baytarlıq Laboratoriya Xidmətləri",
+    "hero_subtitle": "Heyvanlarınız üçün hərtərəfli laborator analiz məlumatı",
+    "cta_analyses": "Analizlərə Bax",
+    "cta_catalogue": "Xidmət Kataloqu",
+    "stats_analyses": "Analiz",
+    "stats_species": "Növ",
+    "stats_categories": "Analiz Kateqoriyası",
+    "featured_species": "Növlərə görə Analizlər",
+    "latest_articles": "Son Məqalələr",
+    "view_all": "Hamısına Bax",
+    "elisa": {
+      "title": "Heyvan sağlamlığında ELISA testləri nə üçün vacibdir?",
+      "subtitle": "ELISA profilaktik yanaşma və elmi əsaslı sürü idarəçiliyi üçün güclü laborator vasitədir.",
+      "points": {
+        "early_diagnosis": {
+          "label": "🧪 Erkən diaqnostika",
+          "content": "Bəzi infeksion xəstəliklər klinik əlamətlər tam formalaşmadan əvvəl laborator müayinə vasitəsilə aşkar edilə bilər. Bu, xəstəliyin təsərrüfat daxilində yayılmasının qarşısının alınması üçün vaxtında tədbirlər görməyə imkan verir."
+        },
+        "herd_monitoring": {
+          "label": "🐄 Sürü sağlamlığının monitorinqi",
+          "content": "ELISA nəticələri təsərrüfatda xəstəliklərin yayılma vəziyyətini qiymətləndirməyə və sürünün ümumi immunoloji statusunu izləməyə kömək edir."
+        },
+        "vaccination_assessment": {
+          "label": "💉 Vaksinasiya proqramlarının qiymətləndirilməsi",
+          "content": "Müəyyən xəstəliklər üzrə anticisim səviyyələrinin monitorinqi vaksinasiya proqramının effektivliyinin qiymətləndirilməsində istifadə edilə bilər. Nəticələr baytar həkimə vaksinasiya strategiyasının düzgün planlaşdırılması üçün əlavə məlumat verir."
+        },
+        "epidemiological_surveillance": {
+          "label": "🦠 İnfeksiyaların epidemioloji nəzarəti",
+          "content": "ELISA testləri təsərrüfatlarda infeksion xəstəliklərin yayılmasının araşdırılması, risklərin qiymətləndirilməsi və xəstəliklərə nəzarət proqramlarının hazırlanmasında mühüm diaqnostik vasitədir."
+        },
+        "poultry_importance": {
+          "label": "🐔 Quşçuluqda xüsusi əhəmiyyəti",
+          "content": "Quşçuluq təsərrüfatlarında ELISA testləri sürünün sağlamlıq statusunun sistemli şəkildə izlənilməsinə imkan verir. Newcastle xəstəliyi, infeksion bronxit, Gumboro xəstəliyi və digər mühüm infeksiyalar üzrə seroloji monitorinq aparıla bilər."
+        }
+      }
+    }
+  },
+  "analysis_catalogue": {
+    "title": "Xidmət Kataloqu",
+    "subtitle": "Analiz portfelimizi növlərə görə nəzərdən keçirin",
+    "view_analyses": "Analizlərə Keç"
+  },
+  "analyses": {
+    "title": "Analiz Kataloqu",
+    "subtitle": "Laborator analizlərimizi kəşf edin",
+    "filter_species": "Növ",
+    "filter_category": "Kateqoriya",
+    "search_placeholder": "Analiz axtar...",
+    "all_species": "Bütün Növlər",
+    "all_categories": "Bütün Kateqoriyalar",
+    "method": "Metod",
+    "sample_type": "Nümunə Növü",
+    "sample_amount": "Nümunə Miqdarı",
+    "storage_conditions": "Saxlanma Şərtləri",
+    "material": "Tələb Olunan Material",
+    "turnaround": "Nəticə Müddəti",
+    "price": "Qiymət",
+    "hours": "saat",
+    "no_results": "Analiz tapılmadı.",
+    "detail_title": "Analiz Təfərrüatı",
+    "notes": "Qeydlər"
+  },
+  "about": {
+    "title": "Haqqımızda",
+    "subtitle": "Baytarlıq laboratoriya xidmətləri",
+    "quality_policy": "Keyfiyyət Siyasətimiz",
+    "portal_mission": "Məqsədimiz, düzgün diaqnostika və müalicə üçün tələb olunan laboratoriya məlumatını sürətli və etibarlı şəkildə əlçatan etməkdir.",
+    "quality_policy_text": "Bütün analizlərimiz keyfiyyət idarəetmə sistemləri çərçivəsində aparılır və nəticələr müəyyən olunmuş müddətdə klinikalara çatdırılır.",
+    "location": "{appName} Laboratoriyası, Azərbaycan",
+    "portal_intro": "{appName} baytarlıq klinikalarına və heyvan sahiblərinə laborator analizlər haqqında hərtərəfli məlumat təqdim edən informasiya portalıdır."
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "name": "Ad Soyad",
+    "email": "E-poçt",
+    "subject": "Mövzu",
+    "message": "Mesaj",
+    "send": "Göndər",
+    "success": "Mesajınız uğurla göndərildi.",
+    "error": "Xəta baş verdi.",
+    "address": "Ünvan",
+    "phone": "Telefon"
+  },
+  "common": {
+    "loading": "Yüklənir...",
+    "error": "Xəta baş verdi",
+    "not_found": "Səhifə tapılmadı",
+    "back": "Geri",
+    "language": "Dil",
+    "error_occurred": "Xəta baş verdi"
+  },
+  "footer": {
+    "rights": "Bütün hüquqlar qorunur",
+    "privacy": "Məxfilik Siyasəti",
+    "contact": "Əlaqə"
+  }
+}
