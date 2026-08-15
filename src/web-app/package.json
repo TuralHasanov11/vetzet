@@ -1,0 +1,50 @@
+{
+  "name": "web-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "test": "nuxt test",
+    "test:all": "npm run test:unit -- --run && npm run test:nuxt -- --run && npm run test:e2e -- --run",
+    "test:unit": "vitest --project unit",
+    "test:nuxt": "vitest --project nuxt",
+    "test:e2e": "vitest --project e2e",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "nuxt typecheck",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/icon": "^2.4.1",
+    "@nuxt/image": "^2.0.0",
+    "@nuxt/scripts": "^1.0.6",
+    "@nuxt/test-utils": "^4.0.3",
+    "@nuxt/ui": "^4.10.0",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@nuxtjs/supabase": "^2.0.9",
+    "buffer": "^6.0.3",
+    "eslint": "^10.3.0",
+    "nuxt": "^4.4.4",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "vue": "^3.5.33",
+    "vue-router": "^5.0.6"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.121",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/uil": "^1.2.3",
+    "@testing-library/vue": "^8.1.0",
+    "@types/node": "^26.2.0",
+    "@vue/test-utils": "^2.4.11",
+    "happy-dom": "^20.11.1",
+    "vitest": "^4.1.10",
+    "vue-tsc": "^3.3.9"
+  }
+}

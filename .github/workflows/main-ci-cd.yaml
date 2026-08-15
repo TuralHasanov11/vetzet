@@ -1,0 +1,19 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: Commit and Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  SOLUTION_PATH: "./Vetzet.slnx"
+  SMOKE_TEST_URL: ""
+      
+jobs:
+  commit:
+    name: Commit
+    runs-on: ubuntu-latest
