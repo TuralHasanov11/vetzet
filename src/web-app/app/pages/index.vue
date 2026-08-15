@@ -15,12 +15,13 @@
         :autoplay="{ delay: 2000 }"
         loop
         class="w-full max-w-xs mx-auto">
-        <img
+        <NuxtImg
           :src="item"
           alt="App Hero"
           class="rounded-lg shadow-2xl ring ring-default"
-          loading="lazy"
-        >
+          placeholder
+          preload 
+        />
       </UCarousel>
     </UPageHero>
 

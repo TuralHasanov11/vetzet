@@ -7,7 +7,7 @@
         >
           <div class="flex flex-col items-center text-center gap-3 py-4">
             <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center group-hover:bg-teal-100 transition-colors">
-              <img :src="s.icon_url ?? ''" class="w-8 h-8 text-teal-600" :alt="s.name" >
+              <NuxtImg :src="s.icon_url ?? ''" class="w-8 h-8 text-teal-600" :alt="s.name" placeholder loading="lazy" />
             </div>
             <h2 class="text-lg font-bold text-slate-800">{{ s.name ?? s.slug }}</h2>
             <p v-if="s.description" class="text-sm text-slate-500 line-clamp-2">

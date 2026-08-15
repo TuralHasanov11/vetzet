@@ -21,14 +21,16 @@ export default defineNuxtConfig({
     },
 
     modules: [
-        '@nuxt/icon',
-        "@nuxt/ui",
-        "@nuxtjs/i18n",
-        "@nuxtjs/supabase",
-        "@nuxt/test-utils/module",
-        "@nuxt/image",
-        "@nuxt/eslint",
-        "@nuxt/scripts",
+      '@nuxt/icon',
+      "@nuxt/ui",
+      "@nuxtjs/i18n",
+      "@nuxtjs/supabase",
+      "@nuxt/test-utils/module",
+      "@nuxt/image",
+      "@nuxt/eslint",
+      "@nuxt/scripts",
+      "@nuxt/hints",
+      "@nuxt/a11y"
     ],
 
     i18n: {
@@ -80,5 +82,26 @@ export default defineNuxtConfig({
         clientBundle: {
             scan: true
         }
-    }
+    },
+
+    eslint: {
+        config: {
+        stylistic: {
+            indent: 'tab',
+            semi: true,
+            // ...
+        }
+        }
+    },
+
+    a11y: {
+        // Enable/disable the module (default: true in dev mode)
+        enabled: true,
+        
+        // Auto-highlight all violations when detected
+        defaultHighlight: true,
+        
+        // Log violations to browser console
+        logIssues: true,
+    },
 });
