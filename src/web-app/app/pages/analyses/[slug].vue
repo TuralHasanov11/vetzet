@@ -108,7 +108,13 @@ const analysisName = computed(() => analysis.value?.name ?? analysis.value?.slug
 useHead({ title: t('pages.analysis_detail.title', { name: analysisName.value }) })
 
 useSeoMeta({
-  title: t('pages.analysis_detail.title', { name: analysisName.value }),
-  description: t('pages.analysis_detail.description', { name: analysisName.value }),
+    title: t('pages.analysis_detail.title', { name: analysisName.value }),
+    description: t('pages.analysis_detail.description', { name: analysisName.value }),
+    ogTitle: t('pages.analysis_detail.title', { name: analysisName.value }),
+    ogDescription: t('pages.analysis_detail.description', { name: analysisName.value }),
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+    twitterTitle: t('pages.analysis_detail.title', { name: analysisName.value }),
+    twitterDescription: t('pages.analysis_detail.description', { name: analysisName.value }),
 })
 </script>

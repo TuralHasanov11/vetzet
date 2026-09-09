@@ -3,6 +3,14 @@
 FROM node:22-alpine AS build
 WORKDIR /app
 
+# Build-time proxy support for corporate networks with TLS interception.
+ARG HTTP_PROXY
+ARG HTTPS_PROXY
+ARG NO_PROXY
+ENV HTTP_PROXY=${HTTP_PROXY}
+ENV HTTPS_PROXY=${HTTPS_PROXY}
+ENV NO_PROXY=${NO_PROXY}
+
 COPY package.json package-lock.json ./
 
 # Install dependencies

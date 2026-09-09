@@ -13,17 +13,6 @@
       "request": "attach",
       "name": "Containers: Attach to Node web-app",
       "remoteRoot": "${workspaceFolder}/src/web-app"
-    },
-    {
-      "name": "Containers: Node.js Launch web-app",
-      "type": "docker",
-      "request": "launch",
-      "preLaunchTask": "docker-run: debug web-app",
-      "platform": "node",
-      "node": {
-        "package": "${workspaceFolder}/src/web-app/package.json",
-        "localRoot": "${workspaceFolder}/src/web-app"
-      }
     }
   ],
   "compounds": [

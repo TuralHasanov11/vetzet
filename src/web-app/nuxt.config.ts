@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
-    devtools: { enabled: true },
+    devtools: {
+      enabled: true,
+
+      timeline: {
+        enabled: true,
+      },
+    },
     app: {
         head: {
             title: 'Vetzet', // default fallback title
@@ -21,16 +27,21 @@ export default defineNuxtConfig({
     },
 
     modules: [
-      '@nuxt/icon',
-      "@nuxt/ui",
-      "@nuxtjs/i18n",
-      "@nuxtjs/supabase",
-      "@nuxt/test-utils/module",
-      "@nuxt/image",
-      "@nuxt/eslint",
-      "@nuxt/scripts",
-      "@nuxt/hints",
-      "@nuxt/a11y"
+        '@nuxt/icon',
+        "@nuxt/ui",
+        "@nuxtjs/i18n",
+        "@nuxtjs/supabase",
+        "@nuxt/test-utils/module",
+        "@nuxt/image",
+        "@nuxt/eslint",
+        "@nuxt/scripts",
+        '@nuxtjs/sitemap',
+        '@nuxtjs/robots',
+        'nuxt-schema-org',
+        'nuxt-link-checker',
+        '@nuxtjs/web-vitals',
+        "@nuxtjs/html-validator",
+        'nuxt-security'
     ],
 
     i18n: {
@@ -84,24 +95,50 @@ export default defineNuxtConfig({
         }
     },
 
-    eslint: {
-        config: {
-        stylistic: {
-            indent: 'tab',
-            semi: true,
-            // ...
-        }
-        }
+    site: {
+        url: 'https://vetzet.com',
+        name: 'Vetzet',
+        // ...etc
     },
 
-    a11y: {
-        // Enable/disable the module (default: true in dev mode)
-        enabled: true,
-        
-        // Auto-highlight all violations when detected
-        defaultHighlight: true,
-        
-        // Log violations to browser console
-        logIssues: true,
+    robots: {
+        // provide simple disallow rules for all robots `user-agent: *`
+        // disallow: ['/admin'],
+        // allow: '/admin/login',
+        groups: [
+            {
+                userAgent: '*',
+                allow: '/',
+                contentUsage: {
+                'bots': 'y',
+                'train-ai': 'n'
+                },
+                contentSignal: {
+                'ai-train': 'no',
+                'search': 'yes'
+                }
+            }
+        ]
+    },
+
+    schemaOrg: {
+        identity: {
+            type: 'Organization',
+            name: 'Vetzet',
+            logo: '/images/logo.png',
+            url: 'https://vetzet.com',
+        },
+    },
+
+    htmlValidator: { 
+        usePrettier: true,
+    },
+
+    security: {
+        headers: {
+            contentSecurityPolicy: {
+                'img-src': ["'self'", 'data:', 'https://vetzet.com', 'http://127.0.0.1:55421', 'https://iycszcvxibuqhniqecna.supabase.co'],
+            },
+        }
     },
 });

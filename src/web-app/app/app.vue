@@ -19,13 +19,12 @@
 </template>
 
 <script setup lang="ts">
-
 const { t } = useI18n()
 
 useSeoMeta({
-  description: t('common.site_description'),
-  ogDescription: t('common.site_description'),
-  ogImage: '~/assets/images/hero1.jpg'
+  ogSiteName: () => t('site.name'),
+  ogImage: '/images/hero1.jpg',
+  twitterImage: '/images/hero1.jpg',
+  twitterCard: 'summary_large_image',
 })
-
 </script>

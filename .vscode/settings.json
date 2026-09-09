@@ -9,5 +9,5 @@
   "tailwindCSS.classFunctions": ["defineAppConfig"],
   "vue.format.template.enabled": true,
   "sarif-viewer.connectToGithubCodeScanning": "off",
-  "eslint.useFlatConfig": true
+  "chat.newSession.defaultMode": "Squad"
 }

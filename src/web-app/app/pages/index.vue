@@ -15,13 +15,12 @@
         :autoplay="{ delay: 2000 }"
         loop
         class="w-full max-w-xs mx-auto">
-        <NuxtImg
+        <img
           :src="item"
           alt="App Hero"
           class="rounded-lg shadow-2xl ring ring-default"
-          placeholder
-          preload 
-        />
+          loading="lazy"
+        >
       </UCarousel>
     </UPageHero>
 
@@ -57,8 +56,14 @@ const localeRoute = useLocaleRoute()
 useHead({ title: t('pages.home.title') })
 
 useSeoMeta({
-  title: t('pages.home.title'),
-  description: t('pages.home.description'),
+    title: t('pages.home.title'),
+    description: t('pages.home.description'),
+    ogTitle: t('pages.home.title'),
+    ogDescription: t('pages.home.description'),
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+    twitterTitle: t('pages.home.title'),
+    twitterDescription: t('pages.home.description'),
 })
 
 const { data: species, status: speciesStatus, error: speciesError } = await useLazyFetch<Species[]>('/api/species', {
