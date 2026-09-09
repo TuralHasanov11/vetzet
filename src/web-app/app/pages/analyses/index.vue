@@ -65,8 +65,14 @@ const { t, locale } = useI18n()
 useHead({ title: t('pages.analyses.title') })
 
 useSeoMeta({
-  title: t('pages.analyses.title'),
-  description: t('pages.analyses.description'),
+    title: t('pages.analyses.title'),
+    description: t('pages.analyses.description'),
+    ogTitle: t('pages.analyses.title'),
+    ogDescription: t('pages.analyses.description'),
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+    twitterTitle: t('pages.analyses.title'),
+    twitterDescription: t('pages.analyses.description'),
 })
 
 const route = useRoute()

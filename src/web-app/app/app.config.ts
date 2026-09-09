@@ -1,6 +1,6 @@
 export default defineAppConfig({
     appName: 'Vetzet',
-    contactEmail: "info@vetzet.com",
+    contactEmail: "Hsdm@vetzetcom.net",
     contactPhone: "+994 012 000 00 00",
     ui: {
         colors: {

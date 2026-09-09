@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
-    devtools: { enabled: true },
+    devtools: {
+      enabled: true,
+
+      timeline: {
+        enabled: true,
+      },
+    },
     app: {
         head: {
             title: 'Vetzet', // default fallback title
@@ -29,6 +35,13 @@ export default defineNuxtConfig({
         "@nuxt/image",
         "@nuxt/eslint",
         "@nuxt/scripts",
+        '@nuxtjs/sitemap',
+        '@nuxtjs/robots',
+        'nuxt-schema-org',
+        'nuxt-link-checker',
+        '@nuxtjs/web-vitals',
+        "@nuxtjs/html-validator",
+        'nuxt-security'
     ],
 
     i18n: {
@@ -80,5 +93,52 @@ export default defineNuxtConfig({
         clientBundle: {
             scan: true
         }
-    }
+    },
+
+    site: {
+        url: 'https://vetzet.com',
+        name: 'Vetzet',
+        // ...etc
+    },
+
+    robots: {
+        // provide simple disallow rules for all robots `user-agent: *`
+        // disallow: ['/admin'],
+        // allow: '/admin/login',
+        groups: [
+            {
+                userAgent: '*',
+                allow: '/',
+                contentUsage: {
+                'bots': 'y',
+                'train-ai': 'n'
+                },
+                contentSignal: {
+                'ai-train': 'no',
+                'search': 'yes'
+                }
+            }
+        ]
+    },
+
+    schemaOrg: {
+        identity: {
+            type: 'Organization',
+            name: 'Vetzet',
+            logo: '/images/logo.png',
+            url: 'https://vetzet.com',
+        },
+    },
+
+    htmlValidator: { 
+        usePrettier: true,
+    },
+
+    security: {
+        headers: {
+            contentSecurityPolicy: {
+                'img-src': ["'self'", 'data:', 'https://vetzet.com', 'http://127.0.0.1:55421', 'https://iycszcvxibuqhniqecna.supabase.co'],
+            },
+        }
+    },
 });
