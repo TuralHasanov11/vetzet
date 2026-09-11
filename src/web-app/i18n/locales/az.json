@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Vetzet",
-    "tagline": "Baytarlıq Laboratoriya Məlumat Portalı"
+    "name": "Heyvan Sağlamlığı Diaqnostik Mərkəzi",
+    "tagline": "Heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətləri"
   },
   "nav": {
     "home": "Ana Səhifə",
@@ -13,28 +13,28 @@
   },
   "pages": {
     "home": {
-      "title": "Vetzet — Baytarlıq Laboratoriya Xidmətləri",
-      "description": "Vetzet baytarlıq klinikaları və heyvan sahibləri üçün hərtərəfli laborator analiz məlumatı təqdim edir: ELISA və PZR testləri, nümunə tələbləri, nəticə müddətləri və qiymətlər."
+      "title": "Heyvan Sağlamlığı Diaqnostik Mərkəzi",
+      "description": "Heyvan Sağlamlığı Diaqnostik Mərkəzi heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətləri göstərir."
     },
     "about": {
-      "title": "Haqqımızda — Vetzet",
-      "description": "Baytarlıq laboratoriya məlumat portalı olan Vetzet, missiyamız, keyfiyyət siyasətimiz və bizimlə əlaqə yolları haqqında məlumat alın."
+      "title": "Haqqımızda",
+      "description": "Heyvan Sağlamlığı Diaqnostik Mərkəzinin ixtisaslaşmış mütəxəssisləri, baytarlıq və laborator diaqnostika xidmətləri haqqında məlumat alın."
     },
     "contact": {
-      "title": "Əlaqə — Vetzet",
-      "description": "Analizlər, nümunə göndərilməsi və əməkdaşlıq ilə bağlı suallar üçün Vetzet baytarlıq laboratoriyası ilə əlaqə saxlayın."
+      "title": "Əlaqə",
+      "description": "Analizlər və baytarlıq laboratoriya xidmətləri ilə bağlı Heyvan Sağlamlığı Diaqnostik Mərkəzi ilə əlaqə saxlayın."
     },
     "analyses": {
-      "title": "Analiz Kataloqu — Vetzet",
-      "description": "Vetzet baytarlıq laborator analizlərinin tam kataloqunu növ, kateqoriya və metoda görə nəzərdən keçirin və süzgəcdən keçirin."
+      "title": "Analiz Kataloqu",
+      "description": "Heyvan Sağlamlığı Diaqnostik Mərkəzinin baytarlıq laborator analizlərinin tam kataloqunu nəzərdən keçirin."
     },
     "analysis_detail": {
-      "title": "{name} — Vetzet",
+      "title": "{name}",
       "description": "{name} analizi üzrə laborator məlumatlar: metod, nümunə növü, nümunə miqdarı, saxlanma şərtləri, nəticə müddəti və qiymət."
     },
     "analysis_catalogue": {
-      "title": "Xidmət Kataloqu — Vetzet",
-      "description": "Heyvan növlərinə görə təşkil edilmiş Vetzet baytarlıq laboratoriya xidmət kataloqunu kəşf edin."
+      "title": "Xidmət Kataloqu",
+      "description": "Heyvan Sağlamlığı Diaqnostik Mərkəzinin baytarlıq laboratoriya xidmət kataloqunu kəşf edin."
     }
   },
   "home": {
@@ -104,10 +104,10 @@
     "title": "Haqqımızda",
     "subtitle": "Baytarlıq laboratoriya xidmətləri",
     "quality_policy": "Keyfiyyət Siyasətimiz",
-    "portal_mission": "Məqsədimiz, düzgün diaqnostika və müalicə üçün tələb olunan laboratoriya məlumatını sürətli və etibarlı şəkildə əlçatan etməkdir.",
+    "portal_mission": "Məqsədimiz heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətlərinin inkişafına töhfə verməkdir.",
     "quality_policy_text": "Bütün analizlərimiz keyfiyyət idarəetmə sistemləri çərçivəsində aparılır və nəticələr müəyyən olunmuş müddətdə klinikalara çatdırılır.",
-    "location": "{appName} Laboratoriyası, Azərbaycan",
-    "portal_intro": "{appName} baytarlıq klinikalarına və heyvan sahiblərinə laborator analizlər haqqında hərtərəfli məlumat təqdim edən informasiya portalıdır."
+    "location": "Gəncə ş., Əziz Əliyev küç. 11B",
+    "portal_intro": "VETZET - Heyvan Sağlamlığı Diaqnostik Mərkəzi müxtəlif sahələr üzrə ixtisaslaşmış peşəkar mütəxəssisləri bir araya gətirir."
   },
   "contact": {
     "title": "Əlaqə",

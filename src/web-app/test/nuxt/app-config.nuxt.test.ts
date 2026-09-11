@@ -13,6 +13,6 @@ describe('nuxt runtime', () => {
     })
 
     const wrapper = await mountSuspended(TestComponent)
-    expect(wrapper.text()).toContain('Vetzet')
+    expect(wrapper.text()).toContain('Heyvan Sağlamlığı Diaqnostik Mərkəzi')
   })
 })

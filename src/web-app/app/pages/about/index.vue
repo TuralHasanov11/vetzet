@@ -14,7 +14,7 @@
         <div class="space-y-3 text-slate-700">
           <div class="flex gap-3 items-start">
             <UIcon name="i-lucide-map-pin" class="w-5 h-5 text-teal-600 shrink-0 mt-0.5" />
-            <p>{{ t('about.location', { appName }) }}</p>
+            <p>{{ contactAddress }}</p>
           </div>
           <div class="flex gap-3 items-start">
             <UIcon name="i-lucide-mail" class="w-5 h-5 text-teal-600 shrink-0 mt-0.5" />
@@ -34,6 +34,7 @@
 const appConfig = useAppConfig()
 const { t } = useI18n()
 const appName = computed(() => appConfig.appName)
+const contactAddress = computed(() => appConfig.contactAddress)
 const contactEmail = computed(() => appConfig.contactEmail)
 const contactPhone = computed(() => appConfig.contactPhone)
 
