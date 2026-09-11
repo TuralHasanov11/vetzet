@@ -5,7 +5,7 @@ import BaseFooter from '~/components/BaseFooter.vue'
 describe('BaseFooter', () => {
   it('renders the app name from app config and the current year', async () => {
     const wrapper = await mountSuspended(BaseFooter)
-    expect(wrapper.text()).toContain('Vetzet')
+    expect(wrapper.text()).toContain('Heyvan Sağlamlığı Diaqnostik Mərkəzi')
     expect(wrapper.text()).toContain(String(new Date().getFullYear()))
   })
 

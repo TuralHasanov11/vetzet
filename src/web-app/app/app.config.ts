@@ -1,7 +1,8 @@
 export default defineAppConfig({
     appName: 'Vetzet',
-    contactEmail: "Hsdm@vetzetcom.net",
-    contactPhone: "+994 012 000 00 00",
+    contactAddress: 'Gəncə ş., Əziz Əliyev küç. 11B',
+    contactEmail: 'hsdm@vetzetcom.net',
+    contactPhone: '+994 55 560 55 34',
     ui: {
         colors: {
             primary: "teal",

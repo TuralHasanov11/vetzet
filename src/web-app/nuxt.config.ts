@@ -10,9 +10,9 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            title: 'Vetzet', // default fallback title
+            title: 'Heyvan Sağlamlığı Diaqnostik Mərkəzi', // default fallback title
+            titleTemplate: '%s | Vetzet',
             htmlAttrs: {
-                lang: 'az',
             },
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -41,7 +41,9 @@ export default defineNuxtConfig({
         'nuxt-link-checker',
         '@nuxtjs/web-vitals',
         "@nuxtjs/html-validator",
-        'nuxt-security'
+        'nuxt-security',
+        'nuxt-seo-utils',
+        'nuxt-gtag'
     ],
 
     i18n: {
@@ -97,8 +99,8 @@ export default defineNuxtConfig({
 
     site: {
         url: 'https://vetzet.com',
-        name: 'Vetzet',
-        // ...etc
+        name: 'Heyvan Sağlamlığı Diaqnostik Mərkəzi',
+        description: 'Heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətləri.',
     },
 
     robots: {
@@ -123,15 +125,22 @@ export default defineNuxtConfig({
 
     schemaOrg: {
         identity: {
-            type: 'Organization',
-            name: 'Vetzet',
+            type: 'VeterinaryCare',
+            name: 'Heyvan Sağlamlığı Diaqnostik Mərkəzi',
             logo: '/images/logo.png',
             url: 'https://vetzet.com',
+            email: 'hsdm@vetzetcom.net',
+            telephone: '+994555605534',
+            address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Gəncə',
+                streetAddress: 'Əziz Əliyev küç. 11B',
+                addressCountry: 'AZ',
+            },
         },
     },
 
     htmlValidator: { 
-        usePrettier: true,
     },
 
     security: {
@@ -141,4 +150,9 @@ export default defineNuxtConfig({
             },
         }
     },
+
+    gtag: {
+        enabled: process.env.NODE_ENV === 'production',
+        id: 'G-XXXXXXXXXX'
+    }
 });

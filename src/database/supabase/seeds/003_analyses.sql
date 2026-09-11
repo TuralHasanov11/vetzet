@@ -61,7 +61,8 @@ values
   ('cirkli-yuyulmus-yun', 10),
   ('teze-qirxilmis-cirkli-yun', 11),
   ('cirkli-yun', 12),
-  ('cirkli-yuyulmamis-yun', 13)
+  ('cirkli-yuyulmamis-yun', 13),
+  ('mermer-tozu', 14)
 on conflict (slug) do update
 set display_order = excluded.display_order;
 
@@ -108,7 +109,10 @@ join (
     ('cirkli-yun', 'ru', 'Грязная шерсть', null),
     ('cirkli-yuyulmamis-yun', 'az', 'Çirkli (yuyulmamış) yun', null),
     ('cirkli-yuyulmamis-yun', 'en', 'Dirty unwashed wool', null),
-    ('cirkli-yuyulmamis-yun', 'ru', 'Грязная немытая шерсть', null)
+    ('cirkli-yuyulmamis-yun', 'ru', 'Грязная немытая шерсть', null),
+    ('mermer-tozu', 'az', 'Mərmər tozu', null),
+    ('mermer-tozu', 'en', 'Marble dust', null),
+    ('mermer-tozu', 'ru', 'Мраморная пыль', null)
 ) as v(slug, language, name, description)
   on v.slug = st.slug
 on conflict (sample_type_id, language) do update
@@ -155,6 +159,7 @@ from (
     ('dabaq-nsp-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Qan/Soyuq halda serum-24 saat ərzində', '1-2 gün', 11, 25.00::numeric),
     ('dabaq-sp-vaksinasiya-effektivliyi-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Qan/Soyuq halda serum-24 saat ərzində', '1-2 gün', 12, 25.00::numeric),
     ('viruslu-diareya-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Qan/Soyuq halda serum-24 saat ərzində', '1-2 gün', 13, 25.00::numeric),
+    ('ibr-viruslu-diareya-neospora-xlamidioz-paketi-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Hemolizə yol vermədən, zərdab ayrılmalı və soyuq çatdırılmalıdır.', '1 gün', 13, 1200.00::numeric),
     ('parainfluenza-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Qan/Soyuq halda serum-24 saat ərzində', '1-2 gün', 14, 25.00::numeric),
     ('smallenberq-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Qan/Soyuq halda serum-24 saat ərzində', '1-2 gün', 15, 25.00::numeric),
     ('bruselyoz-mal-qara', 'mal-qara', 'infeksiyoz', 'elisa', 'qan-serumu', '3-5 ml', 'Qan/Soyuq halda serum-24 saat ərzində', '1-2 gün', 16, 25.00::numeric),
@@ -166,6 +171,7 @@ from (
     ('bogazliq-testi-mal-qara', 'mal-qara', 'genel-kontrol', 'idexx-testi', 'qan-serum-plazma', '3-5 ml', 'Soyuq halda serum-24 saat ərzində', '1 gün', 22, 20.00::numeric),
     ('sudde-antibiotik-teyini-mal-qara', 'mal-qara', 'genel-kontrol', 'idexx-testi', 'sud', '3-5 ml', 'Soyuq halda serum-6 saat ərzində', '1 gün', 23, 20.00::numeric),
     ('ketoz-testi-mal-qara', 'mal-qara', 'genel-kontrol', null, 'qan-serum-plazma', '3-5 ml', null, null, 24, null),
+    ('dezinfeksiyanin-effektivliyinin-teyini-mal-qara', 'mal-qara', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '5 nümunə', null, null, 25, null),
     ('antibiogram-mal-qara', 'mal-qara', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '100-200 qr', '+4C/qısa müddətə', '2-3 gün', 30, 50.00::numeric),
     ('patogen-bakteriyalar-mal-qara', 'mal-qara', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '100-200 qr', '+4C/qısa müddətə', '2-3 gün', 31, 25.00::numeric),
     ('e-coli-o157-mal-qara', 'mal-qara', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '100-200 qr', '+4C/qısa müddətə', '2-3 gün', 32, 25.00::numeric),
@@ -193,6 +199,14 @@ from (
     ('t2-ht2-toxins-mal-qara', 'mal-qara', 'mikotoksinler', 'elisa', 'xammal-yem', '200-500 qr', 'Təmiz qablaşdırma/paket', '1-2 gün', 75, 80.00::numeric),
     ('fuminosin-mal-qara', 'mal-qara', 'mikotoksinler', 'elisa', 'xammal-yem', '200-500 qr', 'Təmiz qablaşdırma/paket', '1-2 gün', 76, 80.00::numeric),
     ('umumi-aflatoxin-mal-qara', 'mal-qara', 'mikotoksinler', 'elisa', 'xammal-yem', '200-500 qr', 'Təmiz qablaşdırma/paket', '1-2 gün', 77, 80.00::numeric),
+    ('qan-serumunda-ehtiyat-qelevinin-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'qan-serumu', null, null, null, 80, 40.00::numeric),
+    ('qan-serumunda-kalsiumun-miqdarinin-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'qan-serumu', null, null, null, 81, 40.00::numeric),
+    ('qan-serumunda-qeyri-uzvi-fosforun-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'qan-serumu', null, null, null, 82, 40.00::numeric),
+    ('heyvan-ve-bitki-menseli-yemlerde-perekis-ededinin-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'xammal-yem', null, null, null, 83, 40.00::numeric),
+    ('bugda-ve-bugda-memulatlarinda-tetrametiltiuram-disulfidinin-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'xammal-yem', null, null, null, 84, 40.00::numeric),
+    ('pambiq-mehsullarinda-serbest-ve-asili-hossipolun-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'xammal-yem', null, null, null, 85, 40.00::numeric),
+    ('mermer-tozunda-kalsium-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'mermer-tozu', null, null, null, 86, 40.00::numeric),
+    ('mermer-tozunda-maqnezium-teyini-mal-qara', 'mal-qara', 'biyokimyasal-analizler', null, 'mermer-tozu', null, null, null, 87, 40.00::numeric),
     ('antibiogram-qus', 'qus', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '100-200 qr', '+4C/qısa müddətə', '2-3 gün', 100, 50.00::numeric),
     ('patogen-bakteriyalar-qus', 'qus', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '100-200 qr', '+4C/qısa müddətə', '2-3 gün', 101, 25.00::numeric),
     ('e-coli-o157-qus', 'qus', 'mikrobiyoloji', 'bakterioloji', 'yaxma-sud-patoloji-material-etraf-muhit', '100-200 qr', '+4C/qısa müddətə', '2-3 gün', 102, 25.00::numeric),
@@ -271,6 +285,7 @@ join (
     ('dabaq-nsp-mal-qara', 'az', 'Dabaq NSP', 'Qan serumu, 3-5 ml', null),
     ('dabaq-sp-vaksinasiya-effektivliyi-mal-qara', 'az', 'Dabaq sp-vaksinasiyanın effektivlik dərəcəsini göstərən', 'Qan serumu, 3-5 ml', null),
     ('viruslu-diareya-mal-qara', 'az', 'Viruslu diareya', 'Qan serumu, 3-5 ml', null),
+    ('ibr-viruslu-diareya-neospora-xlamidioz-paketi-mal-qara', 'az', 'İBR, viruslu diareya, Neospora və Xlamidioz paketi', 'Qan zərdabı, hər test üçün 3-5 ml', '14 nümunəlik paket. Paketə daxildir: İBR (rinotraxeit) testi, viruslu diareyya təyini, Neospora təyini və xlamidiozun təyini.'),
     ('parainfluenza-mal-qara', 'az', 'Parainfluenza', 'Qan serumu, 3-5 ml', null),
     ('smallenberq-mal-qara', 'az', 'Şmallenberq', 'Qan serumu, 3-5 ml', null),
     ('bruselyoz-mal-qara', 'az', 'Bruselyoz', 'Qan serumu, 3-5 ml', null),
@@ -282,6 +297,7 @@ join (
     ('bogazliq-testi-mal-qara', 'az', 'Boğazlıq testi', 'Qan/serum/plazma, 3-5 ml', null),
     ('sudde-antibiotik-teyini-mal-qara', 'az', 'Süddə antibiotic təyini', 'Süd, 3-5 ml', null),
     ('ketoz-testi-mal-qara', 'az', 'Ketoz testi', 'Qan/serum/plazma, 3-5 ml', null),
+    ('dezinfeksiyanin-effektivliyinin-teyini-mal-qara', 'az', 'Dezinfeksiyanın effektivliyinin təyini', 'Yaxma/süd/patoloji material/ətraf mühit, 5 nümunə', null),
     ('antibiogram-mal-qara', 'az', 'Antibiogram', 'Yaxma/süd/patoloji material/ətraf mühit, 100-200 qr', null),
     ('patogen-bakteriyalar-mal-qara', 'az', 'Patogen bakteriyalar', 'Yaxma/süd/patoloji material/ətraf mühit, 100-200 qr', null),
     ('e-coli-o157-mal-qara', 'az', 'E. coli O157', 'Yaxma/süd/patoloji material/ətraf mühit, 100-200 qr', null),
@@ -309,6 +325,14 @@ join (
     ('t2-ht2-toxins-mal-qara', 'az', 'T-2/HT-2 toxins', 'Xammal/yem, 200-500 qr', null),
     ('fuminosin-mal-qara', 'az', 'Fuminosin', 'Xammal/yem, 200-500 qr', null),
     ('umumi-aflatoxin-mal-qara', 'az', 'Ümumi aflatoxin', 'Xammal/yem, 200-500 qr', null),
+    ('qan-serumunda-ehtiyat-qelevinin-teyini-mal-qara', 'az', 'Qan serumunda ehtiyat qələvinin təyini', 'Qan serumu', 'Metabolik asidoz.'),
+    ('qan-serumunda-kalsiumun-miqdarinin-teyini-mal-qara', 'az', 'Qan serumunda kalsiumun miqdarının təyini', 'Qan serumu', 'Kalsiumun həddindən artıq çox olması orqanları zəhərləyir.'),
+    ('qan-serumunda-qeyri-uzvi-fosforun-teyini-mal-qara', 'az', 'Qan serumunda qeyri-üzvi fosforun təyini', 'Qan serumu', 'Doğuşdan sonrakı hemoqlobinuriya, sonsuzluq və reproduktiv problemlər. Fosfor çatışmayan heyvanlar yem olmayan maddələri yalamağa və yeməyə başlayırlar.'),
+    ('heyvan-ve-bitki-menseli-yemlerde-perekis-ededinin-teyini-mal-qara', 'az', 'Heyvan və bitki mənşəli yemlərdə peroksid ədədinin təyini', 'Xammal/yem', 'Yemdəki piy və yağların köhnəlmə və xarab olma dərəcəsini ölçən keyfiyyət və təhlükəsizlik göstəricisidir.'),
+    ('bugda-ve-bugda-memulatlarinda-tetrametiltiuram-disulfidinin-teyini-mal-qara', 'az', 'Buğda və buğda məmulatlarında tetrametiltiuram disülfidinin təyini', 'Xammal/yem', 'Tetrametiltiuram disülfid toxum dərmanı kimi istifadə olunan funqisiddir.'),
+    ('pambiq-mehsullarinda-serbest-ve-asili-hossipolun-teyini-mal-qara', 'az', 'Pambıq məhsullarında sərbəst və asılı hossipolun təyini', 'Xammal/yem', 'Sərbəst hossipol ən təhlükəli və zəhərli formadır, hüceyrələri birbaşa parçalayır.'),
+    ('mermer-tozunda-kalsium-teyini-mal-qara', 'az', 'Mərmər tozunda kalsium təyini', 'Mərmər tozu', 'Mərmər tozunda kalsium karbonatın (CaCO3) kalsium təyini.'),
+    ('mermer-tozunda-maqnezium-teyini-mal-qara', 'az', 'Mərmər tozunda maqnezium təyini', 'Mərmər tozu', 'Artıq olduqda zəhərlənmə yaradır.'),
     ('antibiogram-qus', 'az', 'Antibiogram', 'Yaxma/süd/patoloji material/ətraf mühit, 100-200 qr', null),
     ('patogen-bakteriyalar-qus', 'az', 'Patogen bakteriyalar', 'Yaxma/süd/patoloji material/ətraf mühit, 100-200 qr', null),
     ('e-coli-o157-qus', 'az', 'E. coli O157', 'Yaxma/süd/patoloji material/ətraf mühit, 100-200 qr', null),

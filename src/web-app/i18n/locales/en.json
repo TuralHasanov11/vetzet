@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Vetzet",
-    "tagline": "Veterinary Laboratory Information Portal"
+    "name": "Animal Health Diagnostic Center",
+    "tagline": "Animal health, laboratory diagnostics and veterinary services"
   },
   "nav": {
     "home": "Home",
@@ -13,28 +13,28 @@
   },
   "pages": {
     "home": {
-      "title": "Vetzet — Veterinary Laboratory Services",
-      "description": "Vetzet provides comprehensive laboratory analysis information for veterinary clinics and animal owners: ELISA and PCR tests, sample requirements, turnaround times and prices."
+      "title": "Animal Health Diagnostic Center",
+      "description": "The Animal Health Diagnostic Center provides animal health, laboratory diagnostics and veterinary services."
     },
     "about": {
-      "title": "About Us — Vetzet",
-      "description": "Learn about Vetzet, the veterinary laboratory information portal, our mission, quality policy and how to reach our team."
+      "title": "About Us",
+      "description": "Learn about the Animal Health Diagnostic Center's specialist team, veterinary services and laboratory diagnostics."
     },
     "contact": {
-      "title": "Contact — Vetzet",
-      "description": "Get in touch with the Vetzet veterinary laboratory for questions about analyses, sample submission or cooperation."
+      "title": "Contact",
+      "description": "Contact the Animal Health Diagnostic Center about analyses and veterinary laboratory services."
     },
     "analyses": {
-      "title": "Analysis Catalogue — Vetzet",
-      "description": "Browse and filter the full Vetzet catalogue of veterinary laboratory analyses by species, category and method."
+      "title": "Analysis Catalogue",
+      "description": "Browse the Animal Health Diagnostic Center's full catalogue of veterinary laboratory analyses."
     },
     "analysis_detail": {
-      "title": "{name} — Vetzet",
+      "title": "{name}",
       "description": "Laboratory details for the {name} analysis: method, sample type, sample amount, storage conditions, turnaround time and price."
     },
     "analysis_catalogue": {
-      "title": "Service Catalogue — Vetzet",
-      "description": "Explore the Vetzet veterinary laboratory service catalogue organised by animal species."
+      "title": "Service Catalogue",
+      "description": "Explore the Animal Health Diagnostic Center's veterinary laboratory service catalogue."
     }
   },
   "home": {
@@ -104,10 +104,10 @@
     "title": "About Us",
     "subtitle": "Veterinary laboratory services",
     "quality_policy": "Our Quality Policy",
-    "portal_mission": "Our goal is to make the laboratory knowledge required for accurate diagnosis and treatment quickly and reliably accessible.",
+    "portal_mission": "Our goal is to contribute to the development of animal health, laboratory diagnostics and veterinary services.",
     "quality_policy_text": "All our analyses are carried out within quality management systems, and results are delivered to clinics within the defined turnaround time.",
-    "location": "{appName} Laboratory, Azerbaijan",
-    "portal_intro": "{appName} is an information portal that provides comprehensive laboratory analysis information for veterinary clinics and pet owners."
+    "location": "11B Aziz Aliyev Street, Ganja, Azerbaijan",
+    "portal_intro": "VETZET - Animal Health Diagnostic Center brings together specialist professionals from diverse fields."
   },
   "contact": {
     "title": "Contact",
