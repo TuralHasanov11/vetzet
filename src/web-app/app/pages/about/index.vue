@@ -46,8 +46,5 @@ useSeoMeta({
   ogTitle: t('pages.about.title'),
   ogDescription: t('pages.about.description'),
   ogType: 'website',
-  twitterCard: 'summary_large_image',
-  twitterTitle: t('pages.about.title'),
-  twitterDescription: t('pages.about.description'),
 })
 </script>

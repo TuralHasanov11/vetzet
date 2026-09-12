@@ -8,7 +8,7 @@
                         v-if="a.category" :label="a.category.name ?? a.category.slug" color="secondary"
                         variant="subtle" size="sm" class="shrink-0" />
                 </div>
-                <div class="space-y-1 text-sm text-slate-500">
+                <div class="space-y-1 text-sm text-slate-600">
                     <p v-if="a.required_material">
                         <span class="font-medium text-slate-600">{{ $t('analyses.material') }}:</span>
                         {{ a.required_material }}

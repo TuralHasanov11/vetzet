@@ -10,6 +10,6 @@ describe('home page', async () => {
   it('renders the hero section and brand name', async () => {
     const html = await $fetch('/')
     expect(html).toContain('Vetzet')
-    expect(html).toContain('Veterinary Laboratory Services')
+    expect(html).toContain('Animal health, laboratory diagnostics, and veterinary services')
   })
 })

@@ -38,8 +38,9 @@
     }
   },
   "home": {
-    "hero_title": "Veterinary Laboratory Services",
+    "hero_title": "Animal health, laboratory diagnostics, and veterinary services",
     "hero_subtitle": "Comprehensive laboratory analysis information for your animals",
+    "hero_image_alt": "Veterinary laboratory analysis",
     "cta_analyses": "Browse Analyses",
     "cta_catalogue": "Service Catalogue",
     "stats_analyses": "Analyses",
@@ -102,7 +103,7 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Veterinary laboratory services",
+    "subtitle": "Animal health, laboratory diagnostics, and veterinary services",
     "quality_policy": "Our Quality Policy",
     "portal_mission": "Our goal is to contribute to the development of animal health, laboratory diagnostics and veterinary services.",
     "quality_policy_text": "All our analyses are carried out within quality management systems, and results are delivered to clinics within the defined turnaround time.",

@@ -38,14 +38,10 @@ useSeoMeta({
     ogTitle: t('pages.contact.title'),
     ogDescription: t('pages.contact.description'),
     ogType: 'website',
-    twitterCard: 'summary_large_image',
-    twitterTitle: t('pages.contact.title'),
-    twitterDescription: t('pages.contact.description'),
 })
 
 const appConfig = useAppConfig()
 
-const appName = computed(() => appConfig.appName)
 const contactAddress = computed(() => appConfig.contactAddress)
 const contactEmail = computed(() => appConfig.contactEmail)
 const contactPhone = computed(() => appConfig.contactPhone)
