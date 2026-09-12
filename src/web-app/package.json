@@ -20,6 +20,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@artmizu/nuxt-prometheus": "^3.0.4",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/icon": "^2.4.1",
     "@nuxt/image": "^2.0.0",
@@ -33,6 +34,7 @@
     "@nuxtjs/web-vitals": "^0.2.7",
     "buffer": "^6.0.3",
     "eslint": "^10.3.0",
+    "evlog": "^2.29.0",
     "nuxt": "^4.4.4",
     "nuxt-gtag": "^5.0.0",
     "nuxt-link-checker": "^5.3.0",

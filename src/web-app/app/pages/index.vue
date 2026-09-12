@@ -9,18 +9,19 @@
     >
       
       <UCarousel 
-        v-slot="{ item }" 
+        v-slot="{ item }"
         dots 
         :items="carouselItems" 
         :autoplay="{ delay: 2000 }"
         loop
-        class="w-full max-w-xs mx-auto">
+        :aria-label="$t('home.hero_image_alt')"
+        class="w-full max-w-xs mx-auto aspect-2/3">
         <img
           :src="item"
-          alt="App Hero"
-          class="rounded-lg shadow-2xl ring ring-default"
-          loading="lazy"
-        >
+          :alt="$t('home.hero_image_alt')"
+          :loading="item === carouselItems[0] ? 'eager' : 'lazy'"
+          class="w-full h-full rounded-lg shadow-2xl ring ring-default object-cover"
+        />
       </UCarousel>
     </UPageHero>
 
@@ -52,6 +53,7 @@ import heroImage4 from '~/assets/images/hero4.jpg'
 
 const { t, locale } = useI18n()
 const localeRoute = useLocaleRoute()
+const img = useImage()
 
 useHead({ title: t('pages.home.title') })
 
@@ -61,9 +63,6 @@ useSeoMeta({
     ogTitle: t('pages.home.title'),
     ogDescription: t('pages.home.description'),
     ogType: 'website',
-    twitterCard: 'summary_large_image',
-    twitterTitle: t('pages.home.title'),
-    twitterDescription: t('pages.home.description'),
 })
 
 const { data: species, status: speciesStatus, error: speciesError } = await useLazyFetch<Species[]>('/api/species', {
@@ -109,5 +108,7 @@ const elisaItems = computed(() => [
   }
 ])
 
-const carouselItems = [heroImage1, heroImage2, heroImage3, heroImage4]
+const carouselItems = computed(() => {
+  return [heroImage1, heroImage2, heroImage3, heroImage4]
+})
 </script>

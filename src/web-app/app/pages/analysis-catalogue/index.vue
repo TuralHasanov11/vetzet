@@ -26,9 +26,6 @@ useSeoMeta({
     ogTitle: t('pages.analysis_catalogue.title'),
     ogDescription: t('pages.analysis_catalogue.description'),
     ogType: 'website',
-    twitterCard: 'summary_large_image',
-    twitterTitle: t('pages.analysis_catalogue.title'),
-    twitterDescription: t('pages.analysis_catalogue.description'),
 })
 
 const { data: species, status: speciesStatus, error: speciesError } = await useLazyFetch<Species[]>('/api/species', {

@@ -38,8 +38,9 @@
     }
   },
   "home": {
-    "hero_title": "Baytarlıq Laboratoriya Xidmətləri",
-    "hero_subtitle": "Heyvanlarınız üçün hərtərəfli laborator analiz məlumatı",
+    "hero_title": "Heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətləri",
+    "hero_subtitle": "Ev heyvanlarınız üçün hərtərəfli laborator analiz məlumatı",
+    "hero_image_alt": "Baytarlıq laborator analizləri",
     "cta_analyses": "Analizlərə Bax",
     "cta_catalogue": "Xidmət Kataloqu",
     "stats_analyses": "Analiz",
@@ -102,7 +103,7 @@
   },
   "about": {
     "title": "Haqqımızda",
-    "subtitle": "Baytarlıq laboratoriya xidmətləri",
+    "subtitle": "Heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətləri",
     "quality_policy": "Keyfiyyət Siyasətimiz",
     "portal_mission": "Məqsədimiz heyvan sağlamlığı, laborator diaqnostika və baytarlıq xidmətlərinin inkişafına töhfə verməkdir.",
     "quality_policy_text": "Bütün analizlərimiz keyfiyyət idarəetmə sistemləri çərçivəsində aparılır və nəticələr müəyyən olunmuş müddətdə klinikalara çatdırılır.",

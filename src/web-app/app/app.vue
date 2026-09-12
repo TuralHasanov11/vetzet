@@ -24,7 +24,7 @@ const { t } = useI18n()
 useSeoMeta({
   ogSiteName: () => t('site.name'),
   ogImage: '/images/hero1.jpg',
-  twitterImage: '/images/hero1.jpg',
-  twitterCard: 'summary_large_image',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
 })
 </script>

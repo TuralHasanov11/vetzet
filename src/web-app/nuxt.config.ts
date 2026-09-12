@@ -43,7 +43,9 @@ export default defineNuxtConfig({
         "@nuxtjs/html-validator",
         'nuxt-security',
         'nuxt-seo-utils',
-        'nuxt-gtag'
+        'nuxt-gtag',
+        'evlog/nuxt',
+        '@artmizu/nuxt-prometheus'
     ],
 
     i18n: {
@@ -84,8 +86,7 @@ export default defineNuxtConfig({
     },
 
     routeRules: {
-        // Set layout for specific route
-        // '/admin/**': { appLayout: 'admin' },
+
     },
 
     icon: {
@@ -111,14 +112,6 @@ export default defineNuxtConfig({
             {
                 userAgent: '*',
                 allow: '/',
-                contentUsage: {
-                'bots': 'y',
-                'train-ai': 'n'
-                },
-                contentSignal: {
-                'ai-train': 'no',
-                'search': 'yes'
-                }
             }
         ]
     },
@@ -140,7 +133,12 @@ export default defineNuxtConfig({
         },
     },
 
-    htmlValidator: { 
+    htmlValidator: {
+        options: {
+            rules: {
+                'prefer-native-element': 'off',
+            },
+        },
     },
 
     security: {
@@ -154,5 +152,30 @@ export default defineNuxtConfig({
     gtag: {
         enabled: process.env.NODE_ENV === 'production',
         id: 'G-XXXXXXXXXX'
-    }
+    },
+
+    evlog: {
+        env: {
+            service: 'Vetzet web-app',
+        },
+    },
+
+    image: {
+        // dir: 'assets'
+    },
+
+    prometheus: {
+        
+    },
+
+    
+    $production: {
+        evlog: { sampling: { rates: { info: 10, warn: 50, debug: 0 } } },
+
+        // image: {
+        //     supabase: {
+        //         baseURL: ''
+        //     }
+        // }
+    },
 });

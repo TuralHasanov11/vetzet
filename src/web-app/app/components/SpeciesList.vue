@@ -7,10 +7,19 @@
         >
           <div class="flex flex-col items-center text-center gap-3 py-4">
             <div class="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center group-hover:bg-teal-100 transition-colors">
-              <img :src="s.icon_url ?? ''" class="w-8 h-8 text-teal-600" :alt="s.name" >
+              <NuxtImg
+                v-if="s.icon_url"
+                :src="s.icon_url"
+                width="32"
+                height="32"
+                class="w-8 h-8 text-teal-600"
+                placeholder
+                loading="lazy"
+                :alt="s.name ?? s.slug"
+              />
             </div>
             <h2 class="text-lg font-bold text-slate-800">{{ s.name ?? s.slug }}</h2>
-            <p v-if="s.description" class="text-sm text-slate-500 line-clamp-2">
+            <p v-if="s.description" class="text-sm text-slate-600 line-clamp-2">
               {{ s.description }}
             </p>
             <UButton
